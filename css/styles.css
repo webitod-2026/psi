@@ -916,8 +916,11 @@ select {
 }
 .booking__channels {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+}
+@media (max-width: 1100px) {
+  .booking__channels { grid-template-columns: repeat(2, 1fr); }
 }
 .channel-card {
   padding: 1.75rem 1.5rem;
@@ -939,6 +942,14 @@ select {
 .channel-card--tg:hover {
   border-color: rgba(34, 158, 217, 0.5);
   box-shadow: 0 16px 36px rgba(34, 158, 217, 0.14);
+}
+.channel-card--calendar:hover {
+  border-color: rgba(66, 133, 244, 0.55);
+  box-shadow: 0 16px 36px rgba(66, 133, 244, 0.14);
+}
+.channel-card--calendar .btn--primary {
+  width: 100%;
+  margin-top: 0;
 }
 .channel-card__icon {
   width: 3.25rem;

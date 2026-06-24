@@ -75,6 +75,14 @@
       <rect x="3" y="4" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
       <path d="M7 9h10M7 13h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
     </symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24">
+      <rect x="3" y="4" width="18" height="18" rx="3" fill="#fff" stroke="#4285F4" stroke-width="1.6"/>
+      <path d="M3 9h18" stroke="#4285F4" stroke-width="1.6"/>
+      <path d="M8 3v4M16 3v4" stroke="#4285F4" stroke-width="1.8" stroke-linecap="round"/>
+      <rect x="7" y="12" width="3" height="3" rx="0.5" fill="#34A853"/>
+      <rect x="12" y="12" width="3" height="3" rx="0.5" fill="#FBBC04"/>
+      <rect x="7" y="17" width="3" height="3" rx="0.5" fill="#EA4335"/>
+    </symbol>
   </svg>
 
   <div class="preloader" id="preloader" aria-hidden="true">
@@ -442,12 +450,20 @@
         <div class="reveal" style="text-align:center; max-width:40rem; margin-inline:auto;">
           <span class="eyebrow">Наступний крок</span>
           <h2 class="section-title">Записатися на консультацію</h2>
-          <p class="section-lead" style="margin-inline:auto;">Напишіть, коли будете готові — без зобов'язань. Я відповім особисто протягом 24 годин.</p>
+          <p class="section-lead" style="margin-inline:auto;">Оберіть зручний час у календарі, напишіть у месенджер або залиште заявку — без зобов'язань. Відповім особисто протягом 24 годин.</p>
         </div>
 
         <div class="booking__channels-wrap reveal">
         <div class="booking__channels">
-          <a href="https://ig.me/m/demo_psychologist_ua" class="channel-card channel-card--ig reveal" target="_blank" rel="noopener noreferrer">
+          <a href="https://calendar.app.google/x67fDKayiyGxGdEG7" class="channel-card channel-card--calendar reveal" target="_blank" rel="noopener noreferrer">
+            <div class="channel-card__icon channel-card__icon--brand">
+              <svg aria-hidden="true" width="44" height="44"><use href="#icon-calendar"/></svg>
+            </div>
+            <h3>Google Calendar</h3>
+            <p>Оберіть вільний слот — <span class="channel-card__handle">60 хвилин</span>, підтвердження після оплати</p>
+            <span class="btn btn--primary">Обрати час</span>
+          </a>
+          <a href="https://ig.me/m/demo_psychologist_ua" class="channel-card channel-card--ig reveal reveal-delay-1" target="_blank" rel="noopener noreferrer">
             <div class="channel-card__icon channel-card__icon--brand">
               <img src="assets/images/ico/Instagram_icon.webp" alt="" width="44" height="44" class="brand-icon">
             </div>
@@ -455,7 +471,7 @@
             <p>Напишіть <span class="channel-card__handle">@demo_psychologist_ua</span> — найшвидший спосіб зв'язатися</p>
             <span class="btn btn--ghost">Написати в Direct</span>
           </a>
-          <a href="https://t.me/demo_psychologist_ua" class="channel-card channel-card--tg reveal reveal-delay-1" target="_blank" rel="noopener noreferrer">
+          <a href="https://t.me/demo_psychologist_ua" class="channel-card channel-card--tg reveal reveal-delay-2" target="_blank" rel="noopener noreferrer">
             <div class="channel-card__icon channel-card__icon--brand">
               <img src="assets/images/ico/Telegram_2019_Logo.svg.webp" alt="" width="44" height="44" class="brand-icon">
             </div>
@@ -463,7 +479,7 @@
             <p><span class="channel-card__handle">@demo_psychologist_ua</span> або <span class="channel-card__phone">+380 00 000 00 00</span></p>
             <span class="btn btn--ghost">Відкрити Telegram</span>
           </a>
-          <a href="#booking-form" class="channel-card channel-card--form reveal reveal-delay-2" data-scroll="booking">
+          <a href="#booking-form" class="channel-card channel-card--form reveal reveal-delay-3" data-scroll="booking-form">
             <div class="channel-card__icon"><svg aria-hidden="true"><use href="#icon-form"/></svg></div>
             <h3>Форма на сайті</h3>
             <p>Залиште заявку — я зв'яжуся з вами особисто</p>
